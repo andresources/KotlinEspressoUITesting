@@ -31,6 +31,34 @@
             </AndroidTestResultsTableState>
           </value>
         </entry>
+        <entry key="-915914577">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="Duration" value="90" />
+                  <entry key="OnePlus&#10; CPH2381" value="120" />
+                  <entry key="Tests" value="360" />
+                  <entry key="d038e577" value="120" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
+        <entry key="-655540911">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="Duration" value="90" />
+                  <entry key="OnePlus" value="120" />
+                  <entry key="OnePlus&#10; CPH2381" value="120" />
+                  <entry key="Tests" value="360" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
         <entry key="32121172">
           <value>
             <AndroidTestResultsTableState>
