@@ -5,22 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ex3_EditTextActivity">
-
+    android:orientation="vertical"
+    tools:context=".Ex4_StartAnotherScreenFirstActivity">
     <EditText
         android:id="@+id/etName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-
-        android:ems="10"
-        />
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnClickMe"
+        android:onClick="ClickMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:onClick="onSubmitClick"
-        android:text="Submit" />
+        android:text="Click Me"
+        tools:layout_editor_absoluteX="63dp" />
 </LinearLayout>
