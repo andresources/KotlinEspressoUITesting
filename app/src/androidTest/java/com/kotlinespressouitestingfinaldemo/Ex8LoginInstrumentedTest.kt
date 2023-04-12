@@ -11,6 +11,7 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import org.hamcrest.Description
+import org.hamcrest.Matchers
 import org.hamcrest.Matchers.not
 import org.hamcrest.TypeSafeMatcher
 import org.junit.Rule
@@ -25,11 +26,8 @@ class Ex8LoginInstrumentedTest {
         onView(withId(R.id.etUserName)).perform(typeText("abc"))
         onView(withId(R.id.etPwd)).perform(typeText("123"))
         onView(withId(R.id.btnLogin)).perform(click())
-        onView(withText("Success"))
-            .inRoot(Ex5ToastMessageInstrumentedTest.ToastMatcher().apply {
-                matches(isDisplayed())
-                //matches(not(isDisplayed())) Incase not equal to
-            })
+        onView(withId(R.id.tvWelcome)).check(matches(withText(Matchers.equalToIgnoringCase("Welcome"))))
+
     }
 
     class ToastMatcher : TypeSafeMatcher<Root?>() {

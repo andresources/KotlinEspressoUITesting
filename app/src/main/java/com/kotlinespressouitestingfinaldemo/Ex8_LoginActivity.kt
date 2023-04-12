@@ -1,5 +1,6 @@
 package com.kotlinespressouitestingfinaldemo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -18,9 +19,9 @@ class Ex8_LoginActivity : AppCompatActivity() {
 
     fun checkLogin(view: View) {
         if(etUserName.text.toString().equals("abc")&&etPwd.text.toString().equals("123")){
-            Toast.makeText(applicationContext,"Success",Toast.LENGTH_LONG).show()
+            startActivity(Intent(applicationContext,WelcomeActivity::class.java))
         }else{
-            Toast.makeText(applicationContext,"Failure",Toast.LENGTH_LONG).show()
+            Toast.makeText(this@Ex8_LoginActivity,"Failure",Toast.LENGTH_LONG).show()
         }
     }
 }
