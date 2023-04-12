@@ -9,5 +9,10 @@
     <string name="error_field_required">This field is required</string>
     <string name="error_login_failed">Your email or password was incorrect. Please try again.</string>
     <string name="login_successfully">Login successfully.</string>
+    <string-array name="langs">
+        <item>Telugu</item>
+        <item>Hindi</item>
+        <item>English</item>
+    </string-array>
 
 </resources>

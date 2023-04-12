@@ -12,6 +12,9 @@
         android:theme="@style/Theme.KotlinEspressoUITestingFinalDemo"
         tools:targetApi="31">
         <activity
+            android:name=".Ex6_SpinnerActivity"
+            android:exported="false" />
+        <activity
             android:name=".Ex5_ToastMessageActivity"
             android:exported="false" />
         <activity
