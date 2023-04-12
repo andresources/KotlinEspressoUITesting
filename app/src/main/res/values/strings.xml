@@ -14,5 +14,8 @@
         <item>Hindi</item>
         <item>English</item>
     </string-array>
+    <string name="text_launch_dialog">launch dialog</string>
+    <string name="text_ok">Ok</string>
+    <string name="text_enter_name">Enter your name</string>
 
 </resources>

@@ -12,6 +12,9 @@
         android:theme="@style/Theme.KotlinEspressoUITestingFinalDemo"
         tools:targetApi="31">
         <activity
+            android:name=".Ex9_DialogToastActivity"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeActivity"
             android:exported="false" />
         <activity
