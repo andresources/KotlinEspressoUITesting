@@ -18,9 +18,21 @@ class Ex6SpinnerInstrumentedTest {
     var activityScenarioRule = ActivityScenarioRule(Ex6_SpinnerActivity::class.java)
 
     @Test
-    fun spinnerTest(){
+    fun spinnerTest1(){
         onView(withId(R.id.spLang)).perform(click());
         onData(anything()).atPosition(1).perform(click());
         onView(withId(R.id.spLang)).check(matches(withSpinnerText(containsString("Te"))));
+    }
+    @Test
+    fun spinnerTest2(){
+        onView(withId(R.id.spLang)).perform(click())
+        onData(allOf(`is`(instanceOf(String::class.java)), `is`("Telugu"))).perform(click())
+        onView(withId(R.id.spLang)).check(matches(withSpinnerText(containsString("Te"))))
+    }
+
+    @Test
+    fun spinnerTest3(){
+        onView(withId(R.id.spLang)).perform(click())
+        onView(withText("Telugu")).perform(click())
     }
 }
