@@ -2,6 +2,7 @@ package com.kotlinespressouitestingfinaldemo
 
 import android.view.View
 import android.widget.EditText
+import androidx.lifecycle.Lifecycle
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.clearText
 import androidx.test.espresso.action.ViewActions.click
@@ -36,6 +37,8 @@ class Ex1ButtonClickInstrumentedTest {
 
         onView(withId(R.id.preferred_language))
             .check(matches(withText("English")))
+
+        //activityScenarioRule.scenario.moveToState(Lifecycle.State.RESUMED)
     }
 
     @Test

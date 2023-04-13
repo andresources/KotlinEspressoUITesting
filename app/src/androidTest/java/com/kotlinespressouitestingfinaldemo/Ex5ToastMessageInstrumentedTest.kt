@@ -16,6 +16,7 @@ import org.junit.Test
 
 
 class Ex5ToastMessageInstrumentedTest {
+    //Toast will work target version 29 and below, make sure going execute before
     @get:Rule
     var activityScenarioRule = ActivityScenarioRule(Ex5_ToastMessageActivity::class.java)
     @Test

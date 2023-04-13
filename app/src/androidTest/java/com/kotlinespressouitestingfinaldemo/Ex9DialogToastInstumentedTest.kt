@@ -42,7 +42,9 @@ class Ex9DialogToastInstumentedTest {
         onView(withId(R.id.text_name)).check(matches(withText(NAME)))
 
         // Is toast displayed and is the message correct?
-       /* onView(withText(buildToastMessage(NAME))).inRoot(ToastMatcher())
-            .check(matches(isDisplayed()))*/
+       onView(withText(buildToastMessage("Mitch"))).inRoot(ToastMatcher())
+            .check(matches(isDisplayed()))
+
+
     }
 }
