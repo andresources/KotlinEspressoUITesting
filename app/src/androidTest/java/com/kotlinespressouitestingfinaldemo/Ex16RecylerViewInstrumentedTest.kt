@@ -27,4 +27,27 @@ class Ex16RecylerViewInstrumentedTest {
         onView(withId(R.id.book_title)).check(matches(withText(BOOK_TITLE)));
         onView(withId(R.id.book_author)).check(matches(withText(BOOK_AUTHOR)));
     }
+
+    @Test
+    fun testClickOnViewInRow(){
+        onView(withId(R.id.rv)).perform(RecyclerViewActions.actionOnItem<RecyclerBooksAdapter.RowHolder>(hasDescendant(withText(BOOK_TITLE)), click()));
+        onView(withId(R.id.book_title)).check(matches(withText(BOOK_TITLE)));
+    }
+
+    @Test
+    fun checkPositionItem(){
+        try {
+            onView(RecyclerViewMatcher(R.id.rv).atPosition(3)).check(
+                matches(
+                    hasDescendant(
+                        withText(
+                            "Joshua Bloch1"
+                        )
+                    )
+                )
+            )
+        }catch (e:java.lang.Exception){
+            throw  Exception("This test failed - " + e.message);
+        }
+    }
 }
