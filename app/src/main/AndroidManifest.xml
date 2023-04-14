@@ -14,15 +14,15 @@
         <activity
             android:name=".BookDetailsActivity"
             android:exported="false" />
-        <!--<activity
+        <activity
             android:name=".Ex15CustomListViewActivity"
-            android:exported="false" />-->
+            android:exported="false" />
         <activity
             android:name=".Ex14DateTimePickerActivity"
             android:exported="false" />
-        <activity
+        <!--<activity
             android:name=".Ex13FragmentActivity"
-            android:exported="false" />
+            android:exported="false" />-->
         <activity
             android:name=".Ex12DialogBox1Activity"
             android:exported="false" />
@@ -69,7 +69,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Ex15CustomListViewActivity"
+            android:name=".Ex13FragmentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
