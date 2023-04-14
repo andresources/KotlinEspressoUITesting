@@ -40,4 +40,10 @@ class Ex6SpinnerInstrumentedTest {
         val INVALID_LANG_NAME = "Urdu"
         onView(withId(R.id.spLang)).check(matches(not(withAdaptedData(withItemContent(INVALID_LANG_NAME)))))
     }
+    @Test
+    fun testDataItemNotInAdapter() {
+        onView(withId(R.id.spLang))
+            .check(matches(not(withAdaptedData(withItemContent("Telugu1")))))
+    }
+
 }

@@ -11,9 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinEspressoUITestingFinalDemo"
         tools:targetApi="31">
-        <!--<activity
-            android:name=".Ex17ViewPagerActivity"
+       <!-- <activity
+            android:name=".Ex19NavigationDrawerActivity"
             android:exported="false" />-->
+
+<activity
+            android:name=".Ex18ActionBarActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Ex20CountingIdlingResourcesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ex17ViewPagerActivity"
+            android:exported="false" />
         <activity
             android:name=".Ex16RecylerViewActivity"
             android:exported="false" />
@@ -75,7 +86,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Ex17ViewPagerActivity"
+            android:name=".Ex19NavigationDrawerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
