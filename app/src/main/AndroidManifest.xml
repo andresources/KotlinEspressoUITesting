@@ -79,14 +79,12 @@
         <activity
             android:name=".Ex3_EditTextActivity"
             android:exported="false" />
-        <activity
-            android:name=".Ex2_EnableOrVisibleActivity"
-            android:exported="false" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Ex19NavigationDrawerActivity"
+            android:name=".Ex2_EnableOrVisibleActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

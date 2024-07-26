@@ -36,7 +36,7 @@
             android:text="English"
             android:onClick="onClick"
             android:textAllCaps="true"
-            android:textColor="#0F9D58"
+            android:textColor="#D32F2F"
             android:textStyle="bold" />
 
         <Button
@@ -47,7 +47,7 @@
             android:onClick="onClick"
             android:text="German"
             android:textAllCaps="true"
-            android:textColor="#0F9D58"
+            android:textColor="#D32F2F"
             android:textStyle="bold" />
 
         <Button
@@ -58,13 +58,13 @@
             android:onClick="onClick"
             android:text="French"
             android:textAllCaps="true"
-            android:textColor="#0F9D58"
+            android:textColor="#D32F2F"
             android:textStyle="bold" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#0F9D58"
+            android:textColor="#D32F2F"
             android:id="@+id/hindi"
             android:onClick="onClick"
             android:text="Hindi"
@@ -75,7 +75,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#0F9D58"
+            android:textColor="#D32F2F"
             android:id="@+id/urdu"
             android:onClick="onClick"
             android:text="Urdu"

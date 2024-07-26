@@ -20,7 +20,8 @@ class Ex2EnableOrVisibleInstrumentedTest {
     @Test
     fun checkViewVisibility(){
         //val activityScenario = ActivityScenario.launch(Ex2_EnableOrVisibleActivity::class.java)
-        onView(allOf(withId(R.id.btn), withText("ClickMe"))).perform(click())
+        //onView(withId(R.id.btn)).perform(click())//match by ID
+        onView(allOf(withId(R.id.btn), withText("Click Button"))).perform(click())
         onView(withId(R.id.tv)).check(matches(isDisplayed()))
        /* onView(withId(R.id.tv))
                    .check(matches(withEffectiveVisibility(Visibility.VISIBLE)))*/

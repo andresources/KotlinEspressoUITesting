@@ -29,9 +29,9 @@ class Ex1ButtonClickInstrumentedTest {
     @Test
     fun englishButtonClicked(){
         //Here
-        // withId(R.id.my_view) is a ViewMatcher
-        // click() is a ViewAction
-        // matches(withText("English")) is a ViewAssertion
+        // withId(R.id.my_view) is a 1.ViewMatcher
+        // click() is a 2.ViewAction
+        // matches(withText("English")) is a 3.ViewAssertion
         onView(withId(R.id.english))
             .perform(click())
 
