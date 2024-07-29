@@ -11,14 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinEspressoUITestingFinalDemo"
         tools:targetApi="31">
-       <!-- <activity
-            android:name=".Ex19NavigationDrawerActivity"
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <!--<activity
+            android:name=".RegistrationActivity"
             android:exported="false" />-->
-
-<activity
+        <!--
+         <activity
+            android:name=".Ex19NavigationDrawerActivity"
+            android:exported="false" />
+        -->
+        <activity
             android:name=".Ex18ActionBarActivity"
             android:exported="false" />
-
         <activity
             android:name=".Ex20CountingIdlingResourcesActivity"
             android:exported="false" />
@@ -64,27 +70,32 @@
         <activity
             android:name=".Ex7_CheckBoxActivity"
             android:exported="false" />
-        <activity
+        <!--
+<activity
             android:name=".Ex6_SpinnerActivity"
             android:exported="false" />
+        -->
         <activity
             android:name=".Ex5_ToastMessageActivity"
             android:exported="false" />
         <activity
             android:name=".Ex4_StartAnotherScreenSecondActivity"
             android:exported="false" />
-        <activity
+        <!--
+<activity
             android:name=".Ex4_StartAnotherScreenFirstActivity"
             android:exported="false" />
-        <activity
+        -->
+        <!--
+<activity
             android:name=".Ex3_EditTextActivity"
             android:exported="false" />
-
+        -->
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Ex2_EnableOrVisibleActivity"
+            android:name=".RegistrationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

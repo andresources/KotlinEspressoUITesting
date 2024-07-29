@@ -21,6 +21,7 @@ class Ex6SpinnerInstrumentedTest {
         onView(withId(R.id.spLang)).perform(click());
         onData(anything()).atPosition(1).perform(click());
         onView(withId(R.id.spLang)).check(matches(withSpinnerText(containsString("Te"))));
+        Thread.sleep(3000)
     }
     @Test
     fun spinnerTest2(){

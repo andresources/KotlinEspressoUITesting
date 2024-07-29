@@ -19,9 +19,13 @@ class Ex3EditTextInstumentedTest {
     var activityScenarioRule = ActivityScenarioRule(Ex3_EditTextActivity::class.java)
     @Test
     fun checkEnteredData(){
-        onView(withId(R.id.etName)).perform(typeText("KSR"))
+        onView(withId(R.id.etName)).perform(typeText("Testing"))
+        Thread.sleep(3000)
         onView(withId(R.id.btnSubmit)).perform(click())
+        onView(withId(R.id.tvDisplayName)).check(matches(withText(containsString("Te"))))
+        Thread.sleep(3000)
+       // onView(withId(R.id.btnSubmit)).perform(click())
         //onView(withId(R.id.etName)).check(matches(withText("Bhav")))
-        onView(withId(R.id.etName)).check(matches(withText(containsString("av"))))
+        //onView(withId(R.id.etName)).check(matches(withText(containsString("av"))))
     }
 }

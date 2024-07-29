@@ -18,8 +18,9 @@ class Ex4StartNewActivityInstrumentedTest {
 
     @Test
     fun startNewActivity(){
-        onView(withId(R.id.etName)).perform(typeText("KSR"))
         onView(withId(R.id.btnClickMe)).perform(click())
-        onView(withId(R.id.tvName)).check(matches(withText(equalToIgnoringCase("ksr"))))
+        onView(withId(R.id.tvName)).check(matches(withText(equalToIgnoringCase("KsR"))))
+        /*onView(withId(R.id.btnClickMe)).perform(click())
+        onView(withId(R.id.tvName)).check(matches(withText(equalToIgnoringCase("ksr"))))*/
     }
 }

@@ -27,7 +27,6 @@ class Ex8LoginInstrumentedTest {
         onView(withId(R.id.etPwd)).perform(typeText("123"))
         onView(withId(R.id.btnLogin)).perform(click())
         onView(withId(R.id.tvWelcome)).check(matches(withText(Matchers.equalToIgnoringCase("Welcome"))))
-
     }
 
     class ToastMatcher : TypeSafeMatcher<Root?>() {
